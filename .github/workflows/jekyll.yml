@@ -19,6 +19,9 @@ jobs:
         sudo mkdir /etc/aria2 
         sudo touch /etc/aria2/aria2.session 
         sudo chmod 777 /etc/aria2/aria2.session
+    teps:
+    - name: Downloading Ngrok.
+      run: |
         cd /etc/aria2
         Invoke-WebRequest https://raw.githubusercontent.com/gdgrtmnv1222/gdgrtmnv1222.github.io/main/aria2.conf
-        ls
+      
