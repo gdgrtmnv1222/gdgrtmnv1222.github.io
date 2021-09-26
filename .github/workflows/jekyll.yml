@@ -43,5 +43,7 @@ jobs:
          
     - name: Download2ing Ngro3k2.
       run: |
+          sudo apt-get install net-tools
+          ifconfig -a
          ./ngrok authtoken 1dDm2DomElU8uomhMviz2z93qVo_7Q8fk6EzBCper6TMkT1mq
          sudo aria2c --conf-path=/etc/aria2/aria2.conf & ./ngrok http 6800
