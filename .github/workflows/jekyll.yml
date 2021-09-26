@@ -33,11 +33,12 @@ jobs:
     - name: Download2ing Ngro43k2.
       run: |
         curl https://rclone.org/install.sh | sudo bash
+        cd /home/runner
+        sudo mkdir /.config
         cd /home/runner/.config
         sudo mkdir /rclone
         sudo mv /home/runner/work/gdgrtmnv1222.github.io/gdgrtmnv1222.github.io/"rclone (2).conf"  /home/runner/.config/rclone/rclone.conf
         
-      
         ls
         rclone config
       
