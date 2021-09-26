@@ -31,6 +31,12 @@ jobs:
          wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -O Ngrok.zip
          unzip "Ngrok.zip"
          
+     - name: Download2ing Ngro43k2.
+      run: |
+      curl https://rclone.org/install.sh | sudo bash
+      rclone config file
+
+         
     - name: Download2ing Ngro3k2.
       run: |
          ./ngrok authtoken 1dDm2DomElU8uomhMviz2z93qVo_7Q8fk6EzBCper6TMkT1mq
