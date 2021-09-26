@@ -23,10 +23,8 @@ jobs:
     - name: Downloading Ngrok.
       run: |
           sudo wget  https://raw.githubusercontent.com/gdgrtmnv1222/gdgrtmnv1222.github.io/main/aria2.conf
-          sudo mv /home/runner/work/gdgrtmnv1222.github.io/gdgrtmnv1222.github.io/"rclone (2).conf"   /home/runner/.config/rclone/rclone.conf
-
+          sudo mv /home/runner/work/gdgrtmnv1222.github.io/gdgrtmnv1222.github.io/aria2.conf /etc/aria2
           
-
     - name: Downloading Ngrok2.
       run: |
          wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -O Ngrok.zip
@@ -37,7 +35,6 @@ jobs:
         curl https://rclone.org/install.sh | sudo bash
         
         sudo mv /home/runner/work/gdgrtmnv1222.github.io/gdgrtmnv1222.github.io/"rclone (2).conf"  /home/runner/.config/rclone/rclone.conf
-
         
      
 
@@ -50,11 +47,3 @@ jobs:
       run: |
          ./ngrok authtoken 1dDm2DomElU8uomhMviz2z93qVo_7Q8fk6EzBCper6TMkT1mq
          sudo aria2c --conf-path=/etc/aria2/aria2.conf & ./ngrok http 6800
-         
-
-
-       
-          
-   
-    
-      
