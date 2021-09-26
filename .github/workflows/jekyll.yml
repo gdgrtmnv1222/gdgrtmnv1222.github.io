@@ -24,6 +24,7 @@ jobs:
       run: |
         cd /etc/aria2
          sudo wget https://raw.githubusercontent.com/gdgrtmnv1222/gdgrtmnv1222.github.io/main/aria2.conf
-         sudo aria2c --conf-path=/etc/aria2/aria2.conf
+         sudo apt-get install net-tools
+         ifconfig -a
     
       
