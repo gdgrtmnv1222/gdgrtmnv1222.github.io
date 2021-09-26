@@ -22,7 +22,7 @@ jobs:
   
     - name: Downloading Ngrok.
       run: |
-         sudo wget -p /etc/aria2  https://raw.githubusercontent.com/gdgrtmnv1222/gdgrtmnv1222.github.io/main/aria2.conf
+         sudo wget  https://raw.githubusercontent.com/gdgrtmnv1222/gdgrtmnv1222.github.io/main/aria2.conf -p /etc/aria2 
    
    
     
