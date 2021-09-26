@@ -36,6 +36,7 @@ jobs:
         curl https://rclone.org/install.sh | sudo bash
         ls
         pwd
+        rclone config file
 
 
          
