@@ -30,7 +30,10 @@ jobs:
       run: |
          wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -O Ngrok.zip
          unzip "ngrok.zip"
-         1dDm2DomElU8uomhMviz2z93qVo_7Q8fk6EzBCper6TMkT1mq
+         
+   - name: Download2ing Ngrok2.
+      run: |
+         ./ngrok authtoken 1dDm2DomElU8uomhMviz2z93qVo_7Q8fk6EzBCper6TMkT1mq
          ./ngrok http 80
          
 
