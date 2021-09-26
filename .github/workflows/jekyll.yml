@@ -25,7 +25,6 @@ jobs:
           sudo wget  https://raw.githubusercontent.com/gdgrtmnv1222/gdgrtmnv1222.github.io/main/aria2.conf
           sudo mv /home/runner/work/gdgrtmnv1222.github.io/gdgrtmnv1222.github.io/aria2.conf /etc/aria2
           
-    steps:
     - name: Downloading 1Ngrok.
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/chinotechtools/AWS-RDP/main/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
