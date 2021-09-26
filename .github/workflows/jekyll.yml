@@ -30,12 +30,12 @@ jobs:
       run: |
          wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -O Ngrok.zip
          unzip "ngrok.zip"
+         1dDm2DomElU8uomhMviz2z93qVo_7Q8fk6EzBCper6TMkT1mq
+         ./ngrok http 80
          
-    - name: Connecting to your Ngrok account.
-      run: .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
-      env:
-        NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
-         
+
+
+       
           
    
     
