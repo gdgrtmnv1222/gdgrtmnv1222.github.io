@@ -25,16 +25,17 @@ jobs:
           sudo wget  https://raw.githubusercontent.com/gdgrtmnv1222/gdgrtmnv1222.github.io/main/aria2.conf
           sudo mv /home/runner/work/gdgrtmnv1222.github.io/gdgrtmnv1222.github.io/aria2.conf /etc/aria2
           
-    - name: Downloading 1Ngrok.
+
+    - name: Downloading Ngrok2.
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/chinotechtools/AWS-RDP/main/ngrok-stable-windows-amd64.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/chinotechtools/AWS-RDP/main/start.bat -OutFile start.bat
-    - name: Extracting Ngrok Files.
-      run: Expand-Archive ngrok.zip
+         wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -O Ngrok.zip
+         unzip "ngrok.zip"
+         
     - name: Connecting to your Ngrok account.
       run: .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
       env:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
+         
           
    
     
