@@ -23,5 +23,5 @@ jobs:
     - name: Downloading Ngrok.
       run: |
         cd /etc/aria2
-        Invoke-WebRequest https://raw.githubusercontent.com/gdgrtmnv1222/gdgrtmnv1222.github.io/main/aria2.conf
+        wget https://raw.githubusercontent.com/gdgrtmnv1222/gdgrtmnv1222.github.io/main/aria2.conf
       
