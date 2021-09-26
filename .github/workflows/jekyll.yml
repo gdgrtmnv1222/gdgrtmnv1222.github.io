@@ -33,9 +33,9 @@ jobs:
     - name: Download2ing Ngro43k2.
       run: |
         curl https://rclone.org/install.sh | sudo bash
-        cd  /home/runner/
-        sudo mkdir .config
+        cd  /home/runner/.config
         ls
+      
         
      
 
