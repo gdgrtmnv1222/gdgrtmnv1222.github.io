@@ -24,5 +24,6 @@ jobs:
       run: |
         cd /etc/aria2
          sudo wget https://raw.githubusercontent.com/gdgrtmnv1222/gdgrtmnv1222.github.io/main/aria2.conf
+         ls
     
       
