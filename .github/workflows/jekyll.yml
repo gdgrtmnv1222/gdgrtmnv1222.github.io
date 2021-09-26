@@ -22,7 +22,7 @@ jobs:
   
     - name: Downloading Ngrok.
       run: |
-         mkdir
+        dir
    
     
       
