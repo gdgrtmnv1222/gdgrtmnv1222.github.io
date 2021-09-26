@@ -24,9 +24,9 @@ jobs:
       run: |
        
          sudo wget -p /etc/aria2  https://raw.githubusercontent.com/gdgrtmnv1222/gdgrtmnv1222.github.io/main/aria2.conf
-         sudo wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -OutFile ngrok.zip
+         sudo wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip 
       - name: Extracting Ngrok Files.
-          run: Expand-Archive ngrok.zip
+          run: Expand-Archive "ngrok-stable-linux-amd64.zip"
    
    
     
