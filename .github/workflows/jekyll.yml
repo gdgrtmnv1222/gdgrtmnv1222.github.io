@@ -19,6 +19,7 @@ jobs:
         sudo mkdir /etc/aria2 
         sudo touch /etc/aria2/aria2.session 
         sudo chmod 777 /etc/aria2/aria2.session
+        df -H
   
     - name: Downloading Ngrok.
       run: |
