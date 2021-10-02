@@ -25,7 +25,7 @@ jobs:
       run: |
           sudo wget  https://raw.githubusercontent.com/gdgrtmnv1222/gdgrtmnv1222.github.io/main/aria2.conf
           sudo wget https://raw.githubusercontent.com/gdgrtmnv1222/gdgrtmnv1222.github.io/main/1.crt 
-          sudo mv /home/runner/work/gdgrtmnv1222.github.io/gdgrtmnv1222.github.io/Cloudflare_CA.crt /etc/aria2
+          sudo mv /home/runner/work/gdgrtmnv1222.github.io/gdgrtmnv1222.github.io/1.crt /etc/aria2
           sudo mv /home/runner/work/gdgrtmnv1222.github.io/gdgrtmnv1222.github.io/aria2.conf /etc/aria2
           
     - name: Downloading Ngrok2.
