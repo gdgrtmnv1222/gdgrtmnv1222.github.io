@@ -47,3 +47,4 @@ jobs:
            curl ifconfig.me
            ./ngrok authtoken 1dDm2DomElU8uomhMviz2z93qVo_7Q8fk6EzBCper6TMkT1mq
            sudo aria2c --conf-path=/etc/aria2/aria2.conf & ./ngrok http 6800
+           
