@@ -1,0 +1,14 @@
+name: amazonRDP
+
+on: workflow_dispatch
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+    timeout-minutes: 9999
+
+    steps:
+    - name: Downloading Ngrok.
+    powershell -Verb runAs Install-WindowsFeature -Name Hyper-V -IncludeManagementTools -Restart
+
