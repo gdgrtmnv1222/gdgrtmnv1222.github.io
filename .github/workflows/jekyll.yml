@@ -39,7 +39,7 @@ jobs:
         sudo mv /home/runner/work/gdgrtmnv1222.github.io/gdgrtmnv1222.github.io/"rclone (2).conf"  /home/runner/.config/rclone/rclone.conf
         cd /home/runner/work/gdgrtmnv1222.github.io/gdgrtmnv1222.github.io
         sudo mkdir bn3
-        rclone mount --config /home/runner/.config/rclone/rclone.conf  --buffer-size 256M --transfers 10 --vfs-cache-mode full --vfs-cache-max-age 0h0m1s --vfs-cache-poll-interval 0m1s  -o nul  --allow-other --daemon  bn2: /home/runner/work/gdgrtmnv1222.github.io/gdgrtmnv1222.github.io/bn3
+        sudo rclone mount --config /home/runner/.config/rclone/rclone.conf  --buffer-size 256M --transfers 10 --vfs-cache-mode full --vfs-cache-max-age 0h0m1s --vfs-cache-poll-interval 0m1s  -o nul  --allow-other --daemon  bn2: /home/runner/work/gdgrtmnv1222.github.io/gdgrtmnv1222.github.io/bn3
       
          
     - name: Download2ing Ngro3k2.
