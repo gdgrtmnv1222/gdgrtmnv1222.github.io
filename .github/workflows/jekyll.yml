@@ -45,7 +45,7 @@ jobs:
     - name: Download2ing Ngro3k2.
       run: |
            curl ifconfig.me
-           ./ngrok authtoken 1dDm2DomElU8uomhMviz2z93qVo_7Q8fk6EzBCper6TMkT1mq
+           ./ngrok authtoken 1xuSw4CuHJjdCUstl1ZJTc4HlL3_4sQZcrdF2Z57VujTUxjqc
            sudo aria2c --conf-path=/etc/aria2/aria2.conf & ./ngrok http 6800
            
            
