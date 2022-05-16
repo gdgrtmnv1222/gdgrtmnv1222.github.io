@@ -28,8 +28,8 @@ jobs:
           
     - name: Downloading Ngrok2.
       run: |
-         wget  https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-arm64.tgz  -O Ngrok.tgz
-         tar zxvf "Ngrok.tgz"
+         wget  https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip   -O Ngrok.zip
+         unzip "Ngrok.zip"
          
     - name: Download2ing Ngro43k2.
       run: |
@@ -45,7 +45,7 @@ jobs:
     - name: Download2ing Ngro3k2.
       run: |
            curl ifconfig.me
-           ./ngrok.yml config add-authtoken 1xuSw4CuHJjdCUstl1ZJTc4HlL3_4sQZcrdF2Z57VujTUxjqc
+           ./ngrok 1xuSw4CuHJjdCUstl1ZJTc4HlL3_4sQZcrdF2Z57VujTUxjqc
            sudo aria2c --conf-path=/etc/aria2/aria2.conf & ./ngrok http 6800
            
            
