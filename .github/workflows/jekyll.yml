@@ -28,7 +28,7 @@ jobs:
           
     - name: Downloading Ngrok2.
       run: |
-         wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-arm64.tgz -O Ngrok.zip
+         wget  https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip  -O Ngrok.zip
          unzip "Ngrok.zip"
          
     - name: Download2ing Ngro43k2.
