@@ -16,6 +16,8 @@ jobs:
     - name: Build the site in the jekyll/builder container
       run: |
         sudo apt-get install aria2 
+    - name: aira2
+      run: |
         sudo mkdir /etc/aria2 
         sudo touch /etc/aria2/aria2.session 
         sudo chmod 777 /etc/aria2/aria2.session
