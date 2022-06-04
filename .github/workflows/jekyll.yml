@@ -51,7 +51,7 @@ jobs:
       run: |
            curl ifconfig.me
            /home/runner/work/gdgrtmnv1222.github.io/gdgrtmnv1222.github.io/ngrok config add-authtoken 1xuSw4CuHJjdCUstl1ZJTc4HlL3_4sQZcrdF2Z57VujTUxjqc
-           sudo aria2c --conf-path=/etc/aria2/aria2.conf & /home/runner/work/gdgrtmnv1222.github.io/gdgrtmnv1222.github.io/ngrok http 6800
+           sudo aria2c --conf-path=/etc/aria2/aria2.conf & /home/runner/work/gdgrtmnv1222.github.io/gdgrtmnv1222.github.io/ngrok http 80
            
            
            
