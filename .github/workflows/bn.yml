@@ -1,0 +1,51 @@
+
+name: bn1
+ 
+on:  
+  push:
+    branches: [ main ] 
+  pull_request:
+    branches: [ main ]
+
+jobs: 
+  build:
+
+    runs-on: ubuntu-18.04
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the site in the jekyll/builder container
+      run: |
+        sudo apt-get install aria2 
+        sudo mkdir /etc/aria2 
+        sudo touch /etc/aria2/aria2.session 
+        sudo chmod 777 /etc/aria2/aria2.session
+        df -H
+  
+    - name: Downloading Ngrok.
+      run: |
+          sudo wget  https://raw.githubusercontent.com/gdgrtmnv1222/gdgrtmnv1222.github.io/main/aria2.conf
+          sudo mv /home/runner/work/gdgrtmnv1222.github.io/gdgrtmnv1222.github.io/aria2.conf /etc/aria2
+          
+    - name: Downloading Ngrok2.
+      run: |
+         wget  https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip   -O Ngrok.zip
+         unzip "Ngrok.zip"
+         
+    - name: Download2ing Ngro43k2.
+      run: |
+        curl https://rclone.org/install.sh | sudo bash
+        cd /home/runner/.config/
+        sudo mkdir rclone
+        sudo mv /home/runner/work/gdgrtmnv1222.github.io/gdgrtmnv1222.github.io/"rclone (2).conf"  /home/runner/.config/rclone/rclone.conf
+        cd /home/runner/work/gdgrtmnv1222.github.io/gdgrtmnv1222.github.io
+        sudo mkdir bn3
+        sudo rclone mount --config /home/runner/.config/rclone/rclone.conf  --buffer-size 256M --transfers 10 --vfs-cache-mode full --vfs-cache-max-age 0h0m1s --vfs-cache-poll-interval 0m1s  -o nul  --allow-other --daemon  bn2: /home/runner/work/gdgrtmnv1222.github.io/gdgrtmnv1222.github.io/bn3
+      
+         
+    - name: Download2ing Ngro3k2.
+      run: |
+           curl ifconfig.me
+           ./ngrok authtoken 1xuSw4CuHJjdCUstl1ZJTc4HlL3_4sQZcrdF2Z57VujTUxjqc
+           sudo aria2c --conf-path=/etc/aria2/aria2.conf & ./ngrok http 6800
+           
